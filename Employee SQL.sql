@@ -42,7 +42,7 @@ dept_name VARCHAR(100),
 PRIMARY KEY (dept_no)
 );
 
---Imports from CSV files
+--Imports from CSV files into created tables
 
 COPY Titles
 FROM 'D:\data\titles.csv'
@@ -73,6 +73,8 @@ COPY Departments
 FROM 'D:\data\departments.csv'
 DELIMITER ','
 CSV HEADER;
+
+--Verifies that table imported correctly
 
 SELECT * FROM Employees;
 SELECT * FROM Salaries;
