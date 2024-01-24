@@ -37,7 +37,7 @@ FOREIGN KEY (emp_no, dept_no) REFERENCES Dept_Emp (emp_no,dept_no)
 );
 
 CREATE TABLE Departments (
-dept_no varchar(4),
+dept_no varchar(4) NOT NULL,
 dept_name VARCHAR(100),
 PRIMARY KEY (dept_no)
 );
@@ -159,3 +159,4 @@ DROP TABLE Dept_Manager;
 Drop TABLE Departments;
 DROP TABLE Dept_Emp;
 */
+
